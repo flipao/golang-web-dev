@@ -5,8 +5,10 @@
     <title>My Peeps</title>
 </head>
 <body>
+{{$sage := .}}
+<p>Sage: {{$sage}}
 <ul>
-    <li>{{.Name}} - {{.Motto}}</li>
+    <li>{{$sage.Name}} - {{$sage.Motto}}</li>
 </ul>
 </body>
 </html>
