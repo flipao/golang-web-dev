@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+{{$rows := .}}
+{{ range $i, $r := $rows}}
+<div>
+    <span># {{$i}}</span>
+    <span>Date: {{$r.Date}}</span>
+    <span>Open {{$r.Open}}</span>
+    <span>High {{$r.High}}</span>
+    <span>Low {{$r.Low}}</span>
+    <span>Volume {{$r.Volume}}</span>
+    <span>AdjClose {{$r.AdjClose}}</span>
+</div>
+{{end}}
+</body>
+</html>
