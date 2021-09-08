@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ME</title>
+</head>
+<body>
+
+<strong>ME</strong><br>
+<a href="/">index</a><br>
+<a href="/dog">dog</a><br>
+<a href="/me">me</a><br>
+{{ if .}}
+<div>Hello {{ .name }}</div>
+{{ else }}
+<form method="POST" action="/me/">
+    Name: <input type="text" name="name" />
+    <input type="submit" value="say hi" />
+</form>
+{{ end }}
+
+</body>
+</html>
